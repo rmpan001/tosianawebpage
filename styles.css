@@ -110,6 +110,25 @@ img, svg, video {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
+/* ── Page Header ── */
+
+.page-header {
+  max-width: var(--max-width);
+  width: 90%;
+  margin: 0 auto;
+  padding: var(--spacing-3xl) var(--container-pad) var(--spacing-lg);
+  text-align: center;
+}
+
+.page-header__title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
 /* ── Section Shared ── */
 
 .section {
