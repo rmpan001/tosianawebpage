@@ -469,6 +469,14 @@ img, svg, video {
   overflow-wrap: anywhere;
 }
 
+.pricing-card__photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: var(--spacing-md);
+}
+
 .pricing-card__title {
   font-size: 0.95rem;
 }
