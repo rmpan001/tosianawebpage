@@ -588,6 +588,41 @@ img, svg, video {
   outline-offset: 4px;
 }
 
+.booking {
+  text-align: center;
+}
+
+.booking__button {
+  min-width: 180px;
+  min-height: 48px;
+  font-family: inherit;
+  color: var(--bg-white);
+  background: var(--text-primary);
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.booking__button:hover {
+  color: var(--text-primary);
+  background: var(--bg-white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(26, 26, 26, 0.15);
+}
+
+.booking__button:active {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .booking__button {
+    transition: none;
+  }
+
+  .booking__button:hover {
+    transform: none;
+  }
+}
+
 .pricing-card__inquiry {
   margin-top: auto;
 }
