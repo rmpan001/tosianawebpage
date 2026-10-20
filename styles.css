@@ -223,54 +223,6 @@ img, svg, video {
   color: #FFFFFF;
 }
 
-.portfolio__grid.glance-carousel {
-  grid-template-columns: none;
-  grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 2.5rem) / 3);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-
-.glance-carousel::-webkit-scrollbar {
-  display: none;
-}
-
-.glance-carousel .portfolio__item {
-  scroll-snap-align: start;
-}
-
-.glance-controls {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  margin-top: var(--spacing-md);
-}
-
-.glance-controls__button {
-  cursor: pointer;
-  background: transparent;
-  transition: background-color 180ms ease, color 180ms ease;
-}
-
-.glance-carousel:focus-visible {
-  outline: 2px solid var(--text-primary);
-  outline-offset: 4px;
-}
-
-@media (max-width: 768px) {
-  .portfolio__grid.glance-carousel {
-    grid-auto-columns: calc((100% - 1.25rem) / 2);
-    gap: 1.25rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio__grid.glance-carousel {
-    grid-auto-columns: 100%;
-  }
-}
-
 /* ── About ── */
 
 .about__content {
