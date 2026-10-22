@@ -414,6 +414,13 @@ img, svg, video {
   color: var(--text-primary);
 }
 
+.footer__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
 .footer__social {
   display: flex;
   gap: var(--spacing-sm);
@@ -597,10 +604,6 @@ img, svg, video {
 .pricing-page button:focus-visible {
   outline: 2px solid var(--text-primary);
   outline-offset: 4px;
-}
-
-.booking {
-  text-align: center;
 }
 
 .booking__button {
