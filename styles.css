@@ -281,18 +281,17 @@ img, svg, video {
 
 @media (max-width: 768px) {
   .grad-gallery {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    --gallery-gap: 16px;
+    --gallery-gap: 10px;
+  }
+
+  .section.grad-portfolio {
+    padding: 1.25rem 12px 2rem;
   }
 }
 
 @media (max-width: 480px) {
   .grad-gallery {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .grad-gallery .grad-gallery__item {
-    grid-column: auto;
+    --gallery-gap: 8px;
   }
 }
 
