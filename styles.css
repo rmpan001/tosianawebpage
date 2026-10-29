@@ -93,6 +93,72 @@ img, svg, video {
   opacity: 0.7;
 }
 
+.navbar__dropdown {
+  position: relative;
+}
+
+.navbar__portfolio-toggle {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  line-height: inherit;
+}
+
+.navbar__submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -1rem;
+  min-width: 180px;
+  padding: 0.5rem;
+  background: var(--bg-warm);
+  border: 1px solid rgba(26, 26, 26, 0.06);
+  box-shadow: 0 8px 16px rgba(26, 26, 26, 0.08);
+}
+
+.navbar__dropdown:has([aria-expanded="true"]) .navbar__submenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar__submenu a,
+.portfolio-categories a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.navbar__submenu a:hover,
+.navbar__submenu a:focus-visible,
+.navbar__submenu a[aria-current="page"],
+.portfolio-categories a:hover {
+  background: var(--bg-white);
+}
+
+.portfolio-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio-categories a {
+  border: 1px solid var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .navbar__submenu {
+    position: static;
+    box-shadow: none;
+    border: 0;
+    padding-left: 1rem;
+  }
+}
+
 .navbar__toggle {
   display: none;
   background: none;

@@ -7,7 +7,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=fe579f8">
+  <link rel="stylesheet" href="styles.css?v=portfolio-pages-1">
+  <script src="navigation.js" defer></script>
 </head>
 <body>
 
@@ -21,7 +22,14 @@
       </button>
       <div class="navbar__links">
         <a href="index.html" class="navbar__link">Home</a>
-        <a href="portfolio.html" class="navbar__link">Portfolio</a>
+        <div class="navbar__dropdown">
+          <button class="navbar__link navbar__portfolio-toggle" type="button" aria-expanded="false" aria-controls="portfolio-menu">Portfolio <span aria-hidden="true">▾</span></button>
+          <div class="navbar__submenu" id="portfolio-menu">
+            <a href="grad.html">Grad</a>
+            <a href="editorial.html">Editorial</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
         <a href="index.html#about" class="navbar__link">About</a>
         <a href="services.html" class="navbar__link">Services</a>
         <a href="index.html#contact" class="navbar__link">Contact</a>
@@ -29,134 +37,16 @@
     </div>
   </nav>
 
-  <!-- Grad -->
-  <section class="section" id="grad">
-    <h2 class="section__title">Grad</h2>
-    <div class="portfolio__grid">
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
+  <main>
+    <section class="section" aria-labelledby="portfolio-title">
+      <h2 class="section__title" id="portfolio-title">Portfolio</h2>
+      <div class="portfolio-categories">
+        <a href="grad.html">Grad</a>
+        <a href="editorial.html">Editorial</a>
+        <a href="events.html">Events</a>
       </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Editorial -->
-  <section class="section" id="editorial">
-    <h2 class="section__title">Editorial</h2>
-    <div class="portfolio__grid">
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Events -->
-  <section class="section" id="events">
-    <h2 class="section__title">Events</h2>
-    <div class="portfolio__grid">
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-      <div class="portfolio__item">
-        <div class="portfolio__placeholder">photo</div>
-        <div class="portfolio__overlay">
-          <span class="portfolio__overlay-text">View</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="footer" id="contact">

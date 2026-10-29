@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=booking-button-1">
+  <link rel="stylesheet" href="styles.css?v=portfolio-pages-1">
+  <script src="navigation.js" defer></script>
 </head>
 <body class="pricing-page">
   <nav class="navbar" aria-label="Main navigation">
@@ -18,7 +19,14 @@
       </button>
       <div class="navbar__links" id="navigation-links">
         <a href="index.html" class="navbar__link">Home</a>
-        <a href="portfolio.html" class="navbar__link">Portfolio</a>
+        <div class="navbar__dropdown">
+          <button class="navbar__link navbar__portfolio-toggle" type="button" aria-expanded="false" aria-controls="portfolio-menu">Portfolio <span aria-hidden="true">▾</span></button>
+          <div class="navbar__submenu" id="portfolio-menu">
+            <a href="grad.html">Grad</a>
+            <a href="editorial.html">Editorial</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
         <a href="index.html#about" class="navbar__link">About</a>
         <a href="services.html" class="navbar__link" aria-current="page">Services</a>
         <a href="#contact" class="navbar__link">Contact</a>
